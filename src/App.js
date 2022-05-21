@@ -1,6 +1,8 @@
+import HomeView from "./view";
+
 const App = () => {
   return (
-   <div className={"bg-red-500"}>Hello World!</div>
+   <HomeView />
   );
 }
 
