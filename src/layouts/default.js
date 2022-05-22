@@ -1,11 +1,11 @@
 import DefaultHeader from "./default/header";
 import DefaultFooter from "./default/footer";
-
-const DefaultLayout = ({ children }) => {
+import cn from "classnames";
+const DefaultLayout = ({ children, className }) => {
   return (
     <>
       <DefaultHeader />
-      <main className={"max-w-project mx-auto"}>{children}</main>
+      <main className={cn("max-w-project mx-auto", className)}>{children}</main>
       <DefaultFooter />
     </>
   );
